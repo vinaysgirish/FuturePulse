@@ -1,0 +1,169 @@
+
+<html>
+		<head><title>Web-to-Lead</title></head>
+		
+		<style>
+			p 
+			{
+				visibility: hidden;
+				margin-top:-50px;
+			}
+			body 
+			{
+				font-family: verdana;
+				font-size: 100%;
+				line-height:10px;
+			}
+			input[type=text], select 
+			{
+			  width: 100%;
+			  padding: 5px 8px;
+			  margin: 4px 10px;
+			  margin-left:10px;
+			  display: inline-block;
+			  border: 1px solid #ddd;
+			  border-radius: 4px;
+			  box-sizing: border;
+			}
+			input[type=submit] 
+			{
+			  width: 100%;
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 14px 20px;
+			  margin: 8px 0;
+			  border: none;
+			  border-radius: 4px;
+			  cursor: pointer;
+			}
+			input[type=submit]:hover 
+			{
+			  background-color: #45f049;
+			}
+			div 
+			{
+			  border-radius: 5px;
+			  background-color: #f2f2f2;
+			  padding: 40px;
+			}
+			button
+			{
+			  background-color: #04AA6D;
+			  color: white;
+			  padding: 14px 20px;
+			  margin: 8px 0;
+			  border: none;
+			  cursor: pointer;
+			  width: 100%;
+			  opacity: 0.9;
+			}
+			.header
+			{
+			  text-align:center;
+			}
+			.center 
+			{
+			  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			  transition: 0.1s;
+			  margin: auto;
+			  width: 50%;
+			  border: 3px solid green;
+			  padding: 10px;
+			}
+		</style>
+	<body>
+	<div class="card">
+		<div class="center">
+			<h1 class="header" >Form to Create Lead Record</h1>
+					<hr style="width:85%;text-align:right; border: 1.4px solid green;"> <br>
+
+				<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+				<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdM00000DIRft" method="POST">
+				
+
+					<input type=hidden name="oid" value="00DdM00000DIRft">
+					<input type=hidden name="retURL" value="http://google.com">
+			
+			<label for="first_name">First Name <label style="color:red">*</label> </label>
+			<input  id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Your name.." required/>
+
+			<label for="last_name">Last Name <label style="color:red">*</label> </label>
+			<input  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Your last name.." required/>
+
+			<label for="email">Email <label style="color:red">*</label> </label>
+			<input  id="email" maxlength="80" name="email" size="20" type="text" placeholder="Your Email ID.." required/>
+
+			<label for="company">Company</label>
+			<input  id="company" maxlength="40" name="company" size="20" type="text" placeholder="Your Company name.." />
+
+			<label for="url">Website</label>
+			<input  id="url" maxlength="80" name="url" size="20" type="text" placeholder="Enter Your Website.." />
+
+			<label for="phone">Phone <label style="color:red">*</label> </label>
+			<input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Your Phone number.." required/>
+			
+			<label for="industry">Industry</label>
+			<select  id="industry" name="industry"><option value="">--None--</option><option value="Agriculture">Agriculture</option>
+				<option value="Apparel">Apparel</option>
+				<option value="Banking">Banking</option>
+				<option value="Biotechnology">Biotechnology</option>
+				<option value="Chemicals">Chemicals</option>
+				<option value="Communications">Communications</option>
+				<option value="Construction">Construction</option>
+				<option value="Consulting">Consulting</option>
+				<option value="Education">Education</option>
+				<option value="Electronics">Electronics</option>
+				<option value="Energy">Energy</option>
+				<option value="Engineering">Engineering</option>
+				<option value="Entertainment">Entertainment</option>
+				<option value="Environmental">Environmental</option>
+				<option value="Finance">Finance</option>
+				<option value="Food &amp; Beverage">Food &amp; Beverage</option>
+				<option value="Government">Government</option>
+				<option value="Healthcare">Healthcare</option>
+				<option value="Hospitality">Hospitality</option>
+				<option value="Insurance">Insurance</option>
+				<option value="Machinery">Machinery</option>
+				<option value="Manufacturing">Manufacturing</option>
+				<option value="Media">Media</option>
+				<option value="Not For Profit">Not For Profit</option>
+				<option value="Other">Other</option>
+				<option value="Recreation">Recreation</option>
+				<option value="Retail">Retail</option>
+				<option value="Shipping">Shipping</option>
+				<option value="Technology">Technology</option>
+				<option value="Telecommunications">Telecommunications</option>
+				<option value="Transportation">Transportation</option>
+				<option value="Utilities">Utilities</option>
+			</select>
+		  
+			<p>
+			<select  id="lead_source" name="lead_source">
+				<option value="Web">Web</option>
+			</select></p>
+			
+			<label for="street">Street</label>
+			<input name="street" type="text" placeholder="Enter Your Street.."></input>
+
+			<label for="city">City</label>
+			<input  id="city" maxlength="40" name="city" size="20" type="text" placeholder="Enter Your City.." />
+
+			<label for="state">State/Province</label>
+			<input  id="state" maxlength="20" name="state" size="20" type="text" placeholder="Enter Your State.."/>
+
+			<label for="zip">Postal Code</label>
+			<input  id="zip" maxlength="20" name="zip" size="20" type="text" placeholder="Enter Your Zip Code.." />
+
+			<label for="country">Country</label>
+			<input  id="country" maxlength="40" name="country" size="20" type="text" placeholder="Enter Your Country.."/>
+
+			<button type="submit" name="submit">Submit</button>
+		
+			</form>
+		</div>
+	</div>
+	</body>
+</html>
+
+
